@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página inicial</title>
+  <title>Lista de Tarefas</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-  <div class="conteiner">
-    <h1>Boas vindas!</h1>
-    <p>Vamos personalizar sua saudação usando JavaScript!</p>
-    <div class="saudacao" id="mensagemsaudacao">Olá, visitante!</div>
-    <button onclick="mudarNome()">Personalizar Saudação</button>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <p>Adicione suas tarefas!</p>
+    <input type="text"  id="inputTarefa" placeholder="Digite sua tarefa">
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    <p id="mensagem"></p>
+    <ul id="listaTarefas">
+    </ul>
+      
   </div>
 
-  <script>
-    function mudarNome(){
-      let nome = "sogra"
-      document.getElementById("mensagemsaudacao").textContent = "Olá, " + nome
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
